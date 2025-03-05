@@ -31,7 +31,7 @@ jobs:
       - name: Start Flask app
         run: |
           cd app
-          python __init__.py &
+          python -m flask run --host=0.0.0.0 --port=5000 &
           sleep 5
 
       - name: Test endpoint
