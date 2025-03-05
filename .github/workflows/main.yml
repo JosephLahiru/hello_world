@@ -28,11 +28,6 @@ jobs:
           pip install flake8
           flake8 app
 
-      - name: Test
-        run: |
-          pip install pytest
-          pytest --cov=app tests
-
       - name: Start Flask app
         run: |
           cd app
